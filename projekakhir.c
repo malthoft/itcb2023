@@ -58,6 +58,7 @@ void createTodo(struct Todo todo[], int *count)
 	fclose(file);
 
 	printf("Tugas berhasil ditambahkan\n");
+	system("cls");
 }
 
 // Menampilkan Daftar To do list
@@ -130,6 +131,7 @@ void updateTodo(struct Todo todo[], int count)
 		fclose(file);
 		printf("Tugas berhasil diupdate\n");
 	}
+	system("cls");
 }
 
 // Menghapus Daftar To do list
@@ -175,6 +177,7 @@ void deleteTodo(struct Todo todo[], int *count)
 		fclose(file);
 		printf("Tugas berhasil dihapus\n");
 	}
+	system("cls");
 }
 
 // menandai tugas kalau sudah selesai atau belum
@@ -194,7 +197,7 @@ void markTodoComplete(struct Todo todo[], int count)
 			break;
 		}
 	}
-
+system("cls");
 }
 
 int main()
